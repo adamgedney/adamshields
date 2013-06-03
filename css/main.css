@@ -46,7 +46,7 @@ list-style: none;
 
 body{
 background: #fefdfd;
-color: #6e6e6e;
+color: #808080;
 font: 62.5% "Helvetica Neue Light", Helvetica, Arial, sans-serif;
 }
 
@@ -66,8 +66,9 @@ line-height: 1.8em;
 }
 
 p, ul, dl{
-font-size: 1.4em;
-line-height: 1.6;
+font-size: 1.5em;
+line-height: 1.5;
+font-weight: 100;
 margin-bottom: 20px;
 }
 
@@ -77,11 +78,118 @@ line-height: 1.3em;
 
 a{
 text-decoration: none;
-color: #08298A;
+color: #808080;
+}
+
+a:hover{
+	color: #690011;
+}
+
+img{
+	max-width: 100%;
+}
+
+.bold{
+	font-weight: 400;
+	color: #3d3d3d;
+}
+
+.message{
+	color: #690011;
+}
+/*--------------------------------------End General / Start Main------------------------------------*/
+
+header{
+	margin-left: 8%;
+}
+
+img.profile{
+	display: inline-block;
+	float: left;
+	max-width: 100%;
+	margin-right: 1%;
+}
+
+img.logo{
+	vertical-align: top;
+	margin-top: 32px;
+	max-width: 100%;
+}
+
+nav ul{
+	width: 57%;
+	float: right;
+	margin: -6px auto;
+}
+
+nav ul li{
+	float: left;
+}
+
+nav ul li:first-child{
+	padding-right: 4%;
+}
+
+nav ul li a{
+	font-size: 1.4em;
+	font-weight: 100;
+	color: #3d3d3d;
+}
+.wrapper{
+	width: 74.5%;
+	margin: 0 auto;
+}
+
+.column p:last-child{
+	margin-bottom: 0;
+}
+
+.mailto{
+	font-size: 1.6em;
+	color: #690011;
+}
+/*-----------------------------------------------QUERIES---------------------------------------------*/
+
+
+@media ( max-width : 904px ) {
+
+nav ul {
+	width: 80%;
+}
+
+}
+
+@media ( max-width : 544px ) {
+
+img.profile{
+	display: block;
+	float: none;
+	width: 340px;
+	margin: 0 auto;
+}
+
+img.logo{
+	display: block;
+	width: 141px;
+	margin: 19px auto 0;
+
+}
+
+nav ul {
+	width: 80%;
+	margin: 16px auto 0;
+}
+
+p:first-child{
+	
+}
+
 }
 
 
-/*--------------------------------------End General / Start Main------------------------------------*/
+
+
+
 
 
 
